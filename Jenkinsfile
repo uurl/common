@@ -1,7 +1,10 @@
 #!/usr/bin/env groovy
 
 common {
-    upstreamProjects = ['confluentinc/license-file-generator']
-    slackChannel = '#kafka-warn'
+    slackChannel = ''
+    testbreakReporting = false
+    downStreamRepos = ["rest-utils", "ksql", "newwave",
+        "kafka-connect-replicator", "hub-client"]
+    disableConcurrentBuilds = true
     nanoVersion = true
 }
